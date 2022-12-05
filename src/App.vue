@@ -4,7 +4,31 @@
 
   export default {
     data() {
-      
+      return {
+        org: {
+          projects: [
+            {
+              url: '#',
+              banner: 'https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png',
+              name: 'eArchives',
+              descripton: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex quos qui sit dolore odio, tempore nesciunt aperiam, dolores voluptas nisi hic beatae. Iusto, quae cum cupiditate quod iure et?',
+              tags: [ { color: '#235A97', text: 'Typescript' }, { color: '#41B983', text: 'Vue' }, { color: '#38bdf8', text: 'Tailwind' } ]
+            }
+          ],
+          members: [
+            {
+              icon: 'https://i.imgur.com/UYYFkDS.jpg',
+              name: 'Jürgen',
+              role: 'Manager'
+            },
+            {
+              icon: 'https://i.imgur.com/UYYFkDS.jpg',
+              name: 'Jürgen',
+              role: 'Manager'
+            }
+          ]
+        }
+      }
     }
   }
 </script>
@@ -30,23 +54,19 @@
         <h1 class="text-4xl text-white text-right">Projects</h1>
 
         <div class="grid grid-cols-4 gap-4 mt-6 rounded-lg">
-          <a href="#">
-            <div class="bg-[#1d1d1d] p-2 rounded-lg hover:opacity-75 transition-opacity duration-300">
-              <img class="rounded-lg" src="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" alt="">
+          <a v-for="(project, index) in org.projects" v-bind:key="index" :href="project.url">
+            <div class="bg-[#1d1d1d] p-2 rounded-lg hover:opacity-75 transition-opacity duration-300" >
+              <img class="rounded-lg" :src="project.banner">
               <div class="px-2 py-4">
                 <span class="text-xl">
-                  eArchives <i class="fa-solid fa-link text-sm opacity-25"></i>
+                  <span v-html="project.name"></span> <i class="fa-solid fa-link text-sm opacity-25"></i>
                 </span>
 
                 <div class="py-4 text-sm">
-                  <span class="rounded-full bg-[#235A97] py-0.5 px-3">Typescript</span>
-                  <span class="rounded-full bg-[#41B983] py-0.5 px-3 ml-2">Vue</span>
-                  <span class="rounded-full bg-[#38bdf8] py-0.5 px-3 ml-2">Tailwind</span>
+                  <span v-for="(tag, i) in project.tags" class="rounded-full py-0.5 px-3 ml-2" :class="`bg-[${tag.color}]`" v-bind:key="i">{{ tag.text }}</span>
                 </div>
 
-                <p class="opacity-70">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex quos qui sit dolore odio, tempore nesciunt aperiam, dolores voluptas nisi hic beatae. Iusto, quae cum cupiditate quod iure et?
-                </p>
+                <p class="opacity-70">{{ project.descripton }}</p>
               </div>
             </div>
           </a>
@@ -65,8 +85,13 @@
 
           </div>
           <div>
-            <div class="grid grid-cols-4 gap-2">
-              <img src="https://i.imgur.com/UYYFkDS.jpg" alt="">
+            <span class="text-lg text-accent font-semibold">Membros</span>
+            <div class="grid grid-cols-4 mt-2">
+              <div v-for="(m, i) in org.members" v-bind:key="i" class="w-32 text-center outline-2 outline-dashed outline-[#292929] rounded-lg p-2">
+                <img :src="m.icon" class="rounded-full w-12 h-12 object-cover inline-block"/>
+                <span class="block mt-1">{{ m.name }}</span>
+                <span class="text-sm">{{ m.role }}</span>
+              </div>
             </div>
           </div>
         </div>
