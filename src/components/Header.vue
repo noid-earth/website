@@ -17,16 +17,16 @@
               <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Home</a>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Projects</a>
+              <a href="#projects" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Projects</a>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">About</a>
+              <a href="#about" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">About</a>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Statistics</a>
+              <a href="#statistics" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Statistics</a>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Contact</a>
+              <a href="#contact" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:opacity-75">Contact</a>
             </li>
           </ul>
         </div>
