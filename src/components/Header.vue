@@ -15,10 +15,10 @@
               <a href="#projects" class="">Projects</a>
             </li>
             <li>
-              <a href="#" class="">About</a>
+              <a href="#about" class="">About</a>
             </li>
             <li>
-              <a href="#" class="">Contact</a>
+              <a href="#contact" class="">Contact</a>
             </li>
           </ul>
         </div>
