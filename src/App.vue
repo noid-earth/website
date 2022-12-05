@@ -22,9 +22,9 @@
               role: 'Manager'
             },
             {
-              icon: 'https://i.imgur.com/UYYFkDS.jpg',
-              name: 'Jürgen',
-              role: 'Manager'
+              icon: 'https://avatars.githubusercontent.com/u/70984139',
+              name: 'Gregori',
+              role: 'Developer'
             }
           ]
         }
@@ -89,8 +89,8 @@
             <div class="grid grid-cols-4 mt-2">
               <div v-for="(m, i) in org.members" v-bind:key="i" class="w-32 text-center outline-2 outline-dashed outline-[#292929] rounded-lg p-2">
                 <img :src="m.icon" class="rounded-full w-12 h-12 object-cover inline-block"/>
-                <span class="block mt-1">{{ m.name }}</span>
-                <span class="text-sm">{{ m.role }}</span>
+                <span class="text-base block mt-1">{{ m.name }}</span>
+                <span class="text-sm bg-[#292929] px-2 py-0.5 rounded-full block mt-1">{{ m.role }}</span>
               </div>
             </div>
           </div>
