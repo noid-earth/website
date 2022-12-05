@@ -58,7 +58,7 @@
     
     <div id="" class="container mx-auto px-4 mt-8 pb-40">
       <h1 class="text-4xl text-white">A programming organization</h1>
-      <p class="text-lg w-1/2 opacity-70 py-2 block">An organization created to bring code lovers together to create innovative, creative and fun projects.</p>
+      <p class="text-lg w-full md:w-1/2 opacity-70 py-2 block">An organization created to bring code lovers together to create innovative, creative and fun projects.</p>
       <a href="#projects" class="px-6 py-2 mt-2 rounded-lg bg-accent inline-block">
         See more
       </a>
@@ -66,9 +66,9 @@
 
     <div id="projects" class="bg-[#292929]">
       <div class="container mx-auto p-8 pb-20">
-        <h1 class="text-4xl text-white text-right">Projects</h1>
+        <h1 class="text-4xl text-white text-center md:text-right">Projects</h1>
 
-        <div class="grid grid-cols-4 gap-4 mt-6 rounded-lg pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4 mt-6 rounded-lg pb-12">
           <a v-for="(project, index) in org.projects" v-bind:key="index" :href="project.url" target="_blank" rel="noopener noreferrer">
 
             <div class="bg-[#1d1d1d] p-2 rounded-lg hover:opacity-75 transition-opacity duration-300">
@@ -92,18 +92,18 @@
 
     <div id="about" class="">
       <div class="container mx-auto p-8 pb-20">
-        <h1 class="text-4xl text-white text-left">About</h1>
+        <h1 class="text-4xl text-white text-center md:text-left">About</h1>
 
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid md:grid-cols-2 md:gap-4">
           <div>
             <h1 class="text-lg text-accent">Why?</h1>
-            <p class="opacity-70 w-4/5 mt-2">
+            <p class="opacity-70 md:w-4/5 mt-2">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, distinctio, doloribus maiores commodi eius nostrum totam earum placeat obcaecati ipsa culpa quas accusantium laboriosam sequi molestiae sed animi molestias modi.
             </p>
           </div>
           <div>
-            <h1 class="text-lg text-accent">Members</h1>
-            <div class="grid grid-cols-4 gap-4 mt-2">
+            <h1 class="text-lg text-accent mt-4 md:mt-0">Members</h1>
+            <div class="grid grid-cols-2 grid:grid-cols-4 gap-4 mt-2">
               <a v-for="(m, i) in org.members" v-bind:key="i" :href="(m.github.length > 5) ? m.github : '#about'">
                 <div class="text-center outline-2 outline-dashed outline-[#292929] rounded-lg p-2 hover:opacity-70 transition-opacity duration-300">
                   <img :src="m.icon " class="rounded-full w-12 h-12 object-cover inline-block"/>
@@ -118,16 +118,16 @@
     </div>
 
     <div id="statistics" class="bg-[#292929]">
-      <div class="container mx-auto p-8 pb-20">
-        <h1 class="text-4xl text-white text-right">Statistics</h1>
+      <div class="container mx-auto p-8 md:pb-20">
+        <h1 class="text-4xl text-white text-center md:text-right">Statistics</h1>
 
         <section class="mb-32 text-center p-4 mt-14">
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 items-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 items-center">
 
-            <div class="" v-for="stat in org.stats" v-bind:key="stat.num">
+            <div class="bg-[#1d1d1d] rounded-lg mt-2 md:mt-0 p-4 md:p-0" v-for="stat in org.stats" v-bind:key="stat.num">
               
-              <h5 class="text-xl mb-4">{{ stat.num }}<span class="text-accent">+</span></h5>
+              <h5 class="text-xl md:mb-4">{{ stat.num }}<span class="text-accent">+</span></h5>
               <h6 class="text-lg">{{ stat.title }}</h6>
               
             </div>
@@ -138,10 +138,10 @@
     </div>
 
     <div id="contact" class="">
-      <div class="container mx-auto p-8 pb-20">
-        <h1 class="text-4xl text-white text-left">Contact</h1>
+      <div class="container mx-auto p-8 md:pb-20">
+        <h1 class="text-4xl text-white text-center md:text-left">Contact</h1>
 
-        <div class="grid grid-cols-2 py-4 mt-6 pb-20">
+        <div class="grid md:grid-cols-2 py-4 mt-6 pb-20">
           <div>
             <h1 class="text-lg">Get in touch with us</h1>
             
@@ -159,7 +159,7 @@
             </ul>
           </div>
           <div>
-            <h1 class="text-lg">Social</h1>
+            <h1 class="text-lg mt-4 md:mt-0">Social</h1>
 
             <ul>
               <li class="py-2">
