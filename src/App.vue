@@ -103,7 +103,7 @@
           </div>
           <div>
             <h1 class="text-lg text-accent mt-4 md:mt-0">Members</h1>
-            <div class="grid grid-cols-2 grid:grid-cols-4 gap-4 mt-2">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
               <a v-for="(m, i) in org.members" v-bind:key="i" :href="(m.github.length > 5) ? m.github : '#about'">
                 <div class="text-center outline-2 outline-dashed outline-[#292929] rounded-lg p-2 hover:opacity-70 transition-opacity duration-300">
                   <img :src="m.icon " class="rounded-full w-12 h-12 object-cover inline-block"/>
@@ -125,7 +125,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 items-center">
 
-            <div class="bg-[#1d1d1d] rounded-lg mt-2 md:mt-0 p-4 md:p-0" v-for="stat in org.stats" v-bind:key="stat.num">
+            <div class="bg-[#1d1d1d] md:bg-transparent rounded-lg mt-2 md:mt-0 p-4 md:p-0" v-for="stat in org.stats" v-bind:key="stat.num">
               
               <h5 class="text-xl md:mb-4">{{ stat.num }}<span class="text-accent">+</span></h5>
               <h6 class="text-lg">{{ stat.title }}</h6>
