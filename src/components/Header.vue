@@ -7,7 +7,7 @@
         </a>
 
         <div class="items-center justify-between w-auto flex">
-          <ul class="flex flex-col p-4 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+          <ul class="flex flex-row p-4 mt-4 space-x-8">
             <li>
               <a href="#" class="">Home</a>
             </li>
@@ -25,3 +25,9 @@
       </div>
     </nav>
 </template>
+
+<script lang="ts">
+export default {
+  name: 'Header'  
+}
+</script>

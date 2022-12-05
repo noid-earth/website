@@ -1,42 +1,37 @@
-<script lang="ts">
+<script setup lang="ts">
   import Header from "./components/Header.vue";
   import Footer from "./components/Footer.vue";
 
-  export default {
-    data() {
-      return {
-        org: {
-          projects: [
-            {
-              url: '#',
-              banner: 'https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png',
-              name: 'eArchives',
-              descripton: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex quos qui sit dolore odio, tempore nesciunt aperiam, dolores voluptas nisi hic beatae. Iusto, quae cum cupiditate quod iure et?',
-              tags: [ { color: '#235A97', text: 'Typescript' }, { color: '#41B983', text: 'Vue' }, { color: '#38bdf8', text: 'Tailwind' } ]
-            }
-          ],
-          members: [
-            {
-              icon: 'https://i.imgur.com/UYYFkDS.jpg',
-              name: 'Jürgen',
-              role: 'Manager'
-            },
-            {
-              icon: 'https://avatars.githubusercontent.com/u/70984139',
-              name: 'Gregori',
-              role: 'Developer'
-            }
-          ]
-        }
+  let org = {
+    projects: [
+      {
+        url: '#',
+        banner: 'https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png',
+        name: 'eArchives',
+        descripton: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex quos qui sit dolore odio, tempore nesciunt aperiam, dolores voluptas nisi hic beatae. Iusto, quae cum cupiditate quod iure et?',
+        tags: [ { color: '#235A97', text: 'Typescript' }, { color: '#41B983', text: 'Vue' }, { color: '#38bdf8', text: 'Tailwind' } ]
       }
-    }
+    ],
+    members: [
+      {
+        icon: 'https://i.imgur.com/UYYFkDS.jpg',
+        name: 'Jürgen',
+        role: 'Manager'
+      },
+      {
+        icon: 'https://avatars.githubusercontent.com/u/70984139',
+        name: 'Gregori',
+        role: 'Developer'
+      }
+    ]
   }
+  
 </script>
 
 <template>
 
   <header class="container mx-auto">
-    <Header/>
+    <Header></Header>
   </header>
 
   <main>
@@ -95,6 +90,44 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="features" class="bg-[#292929]">
+      <div class="container mx-auto p-8">
+        <h1 class="text-4xl text-white text-right">Statistics</h1>
+
+        <section class="mb-32 text-center">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-0 items-center">
+
+            <div class="mb-12 lg:mb-0 relative">
+              
+              <h5 class="text-lg mb-4">1+</h5>
+              <h6 class="font-medium">Lines of Code</h6>
+              
+            </div>
+
+            <div class="mb-12 lg:mb-0 relative">
+              
+              <h5 class="text-lg font-medium mb-4">12+</h5>
+              <h6 class="font-medium">Collaboratos</h6>
+              
+            </div>
+
+            <div class="mb-12 md:mb-0 relative">
+              
+              <h5 class="text-lg mb-4">100+</h5>
+              <h6 class="font-medium">Projects</h6>
+              
+            </div>
+
+            <div class="relative">
+              
+              <h5 class="text-lg mb-4">3+</h5>
+              <h6 class="font-medium mb-0">Languages</h6>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
