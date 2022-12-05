@@ -18,6 +18,9 @@
               <a href="#about" class="">About</a>
             </li>
             <li>
+              <a href="#statistics" class="">Statistics</a>
+            </li>
+            <li>
               <a href="#contact" class="">Contact</a>
             </li>
           </ul>
