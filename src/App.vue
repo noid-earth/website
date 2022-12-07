@@ -8,8 +8,8 @@
         url: 'https://github.com/projectdema/earchives',
         banner: '/eArchives/banner.png',
         name: 'eArchives',
-        descripton: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex quos qui sit dolore odio, tempore nesciunt aperiam, dolores voluptas nisi hic beatae. Iusto, quae cum cupiditate quod iure et?',
-        tags: [ { text: 'Typescript' }, { text: 'Vue' }, { text: 'Tailwind' } ]
+        descripton: 'A library of study files on a variety of subjects.',
+        tags: [ { text: 'Typescript' }, { text: 'EJS' }, { text: 'Tailwind' } ]
       }
     ],
     members: [
