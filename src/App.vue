@@ -5,7 +5,7 @@
   let org = {
     projects: [
       {
-        url: 'https://github.com/projectdema/earchives',
+        url: 'https://github.com/noid-earth/earchives',
         banner: '/eArchives/banner.png',
         name: 'eArchives',
         descripton: 'A library of study files on a variety of subjects.',
@@ -16,7 +16,7 @@
       {
         icon: 'https://i.imgur.com/UYYFkDS.jpg',
         name: 'Jürgen',
-        role: 'Manager',
+        role: 'Founder',
         github: 'https://github.com/jurgenjacobsen',
       },
       {
@@ -57,11 +57,8 @@
   <main>
     
     <div id="" class="container mx-auto px-4 mt-8 pb-40">
-      <h1 class="text-4xl text-white">A programming organization</h1>
-      <p class="text-lg w-full md:w-1/2 opacity-70 py-2 block">An organization created to bring code lovers together to create innovative, creative and fun projects.</p>
-      <a href="#projects" class="px-6 py-2 mt-2 rounded-lg bg-accent inline-block">
-        See more
-      </a>
+      <h1 class="text-4xl text-white">Hello!</h1>
+      <p class="text-lg w-full md:w-2/3 opacity-70 py-2 block">We are a group of enthusiastic developers creating innovative, creative non-profit projects.</p>
     </div>
 
     <div id="projects" class="bg-[#292929]">
@@ -90,53 +87,6 @@
       </div>
     </div>
 
-    <div id="about" class="">
-      <div class="container mx-auto p-8 pb-20">
-        <h1 class="text-4xl text-white text-center md:text-left">About</h1>
-
-        <div class="grid md:grid-cols-2 md:gap-4">
-          <div>
-            <h1 class="text-lg text-accent">Why?</h1>
-            <p class="opacity-70 md:w-4/5 mt-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, distinctio, doloribus maiores commodi eius nostrum totam earum placeat obcaecati ipsa culpa quas accusantium laboriosam sequi molestiae sed animi molestias modi.
-            </p>
-          </div>
-          <div>
-            <h1 class="text-lg text-accent mt-4 md:mt-0">Members</h1>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
-              <a v-for="(m, i) in org.members" v-bind:key="i" :href="(m.github.length > 5) ? m.github : '#about'">
-                <div class="text-center outline-2 outline-dashed outline-[#292929] rounded-lg p-2 hover:opacity-70 transition-opacity duration-300">
-                  <img :src="m.icon " class="rounded-full w-12 h-12 object-cover inline-block"/>
-                  <span class="text-lg block mt-1">{{ m.name }}</span>
-                  <span class="text-sm bg-[#292929] px-2 py-0.5 rounded-full block mt-1">{{ m.role }}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="statistics" class="bg-[#292929]">
-      <div class="container mx-auto p-8 md:pb-20">
-        <h1 class="text-4xl text-white text-center md:text-right">Statistics</h1>
-
-        <section class="mb-32 text-center p-4 mt-14">
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 items-center">
-
-            <div class="bg-[#1d1d1d] md:bg-transparent rounded-lg mt-2 md:mt-0 p-4 md:p-0" v-for="stat in org.stats" v-bind:key="stat.num">
-              
-              <h5 class="text-xl md:mb-4">{{ stat.num }}<span class="text-accent">+</span></h5>
-              <h6 class="text-lg">{{ stat.title }}</h6>
-              
-            </div>
-
-          </div>
-        </section>
-      </div>
-    </div>
-
     <div id="contact" class="">
       <div class="container mx-auto p-8 md:pb-20">
         <h1 class="text-4xl text-white text-center md:text-left">Contact</h1>
@@ -148,7 +98,7 @@
             <ul>
               <li class="py-2">
                 <a href="mailto:contact@projectdema.com" class="font-semibold">
-                  <i class="fa-solid fa-envelope opacity-50"></i> <span class="px-2 text-accent">contact@projectdema.com</span>
+                  <i class="fa-solid fa-envelope opacity-50"></i> <span class="px-2 text-accent">contact@noid.earth</span>
                 </a>
               </li>
               <li class="py-2">
@@ -163,19 +113,19 @@
 
             <ul>
               <li class="py-2">
-                <a href="https://github.com/projectdema" class="font-semibold" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/noid-earth" class="font-semibold" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-github opacity-50"></i> <span class="px-2 text-accent">Github</span>
                 </a>
               </li>
 
               <li class="py-2">
-                <a href="https://instagram.com/projectdema" class="font-semibold" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/noid-earth" class="font-semibold" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-instagram opacity-50"></i> <span class="px-2 text-accent">Instagram</span>
                 </a>
               </li>
 
               <li class="py-2">
-                <a href="https://twitter.com/projectdema" class="font-semibold" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/noid-earth" class="font-semibold" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-twitter opacity-50"></i> <span class="px-2 text-accent">Twitter</span>
                 </a>
               </li>
