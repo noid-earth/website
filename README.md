@@ -1,3 +1,3 @@
+![Noid Earth](/public/images/banner.png)
 
-# projectDema
-projectdema.com
+# Noid Earth
