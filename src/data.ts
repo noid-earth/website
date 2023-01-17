@@ -1,7 +1,7 @@
 export default {
     projects: [
       {
-        url: 'https://github.com/noid-earth/earchives',
+        url: 'https://earchives.noid.earth',
         banner: 'https://i.imgur.com/bryLjhA.png',
         name: 'eArchives',
         descripton: 'A library of study files on a variety of subjects.',
@@ -27,24 +27,6 @@ export default {
         name: 'Gregori',
         role: 'Developer',
         github: 'https://github.com/Gregoriconter',
-      }
-    ],
-    stats: [
-      {
-        title: 'Languages of Code',
-        num: 7
-      },
-      {
-        title: 'Lines of Code',
-        num: 72128
-      },
-      {
-        title: 'Collaboratos',
-        num: 2
-      },
-      {
-        title: 'Projects',
-        num: 3
       }
     ]
 };
