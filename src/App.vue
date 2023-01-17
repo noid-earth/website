@@ -1,6 +1,8 @@
 <script setup lang="ts">
   import Header from "./components/Header.vue";
   import Footer from "./components/Footer.vue";
+  //@ts-ignore
+  import Adsense from "./components/Adsense.vue";
 
   import org from "./data";
   
@@ -23,7 +25,7 @@
       <div class="container mx-auto p-8 pb-20">
         <h1 class="text-4xl text-white text-center md:text-right">Projects</h1>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4 mt-6 rounded-lg pb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-2 md:gap-4 mt-6 rounded-lg pb-12">
           <a v-for="(project, index) in org.projects" v-bind:key="index" :href="project.url" target="_blank" rel="noopener noreferrer">
 
             <div class="bg-[#1d1d1d] p-2 rounded-lg hover:opacity-75 transition-opacity duration-300">
@@ -49,7 +51,7 @@
       <div class="container mx-auto p-8 md:pb-20">
         <h1 class="text-4xl text-white text-center md:text-left">Contact</h1>
 
-        <div class="grid md:grid-cols-2 py-4 mt-6 pb-20">
+        <div class="grid md:grid-cols-3 py-4 mt-6 pb-20">
           <div>
             <h1 class="text-lg">Get in touch with us</h1>
             
@@ -89,6 +91,9 @@
               </li>
             </ul>
             
+          </div>
+          <div>
+            <Adsense/>
           </div>
         </div>
       </div>
