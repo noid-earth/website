@@ -11,6 +11,11 @@
 
 <script lang="ts">
 export default {
-  name: 'Header'  
+  name: 'Header',
+  mounted() {
+    if (location.protocol !== 'https:' && location.hostname === 'noid.earth') {
+      location.replace(`https:${location.href.substring(location.protocol.length)}`);
+    }
+  }
 }
 </script>
